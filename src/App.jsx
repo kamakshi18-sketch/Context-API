@@ -6,6 +6,8 @@ import CounterUseReducer from './components/CounterUseReducer'
 import {products} from './components/Product'
 import { cartReducer,initialState } from './components/CartReducer'
 import { useReducer } from 'react'
+// import UseCallbackandUseMemo from './components/UseCallbackandUseMemo'
+import UseMemo from './components/UseMemo'
 const App = () => {
   // const user="kamakshi"
     const [state,dispatch]= useReducer(cartReducer,initialState);
@@ -20,6 +22,8 @@ const App = () => {
            
     {/* <Componnentone/> */}
     {/* <CounterUseReducer/> */}
+    {/* <UseCallbackandUseMemo/> */}
+    <UseMemo/>
     <h1>Cart</h1>
     <input type="number" placeholder='dicount btao' value={cupon}
     onChange={(e)=>setCupon(e.target.value)}/>
